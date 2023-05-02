@@ -15,6 +15,17 @@ git rebase --interactive --autosquash OLDCOMMIT^
 
 OLDCOMMIT is the hash for the commit you wish to append to.
 
+### See number of changed lines
+- From COMMIT1 to COMMIT2
+    - ```git diff --shortstat <COMMIT1> <COMMIT2>```
+- From COMMIT1 to HEAD and unstaged
+    - ```git diff --shortstat <COMMIT>```
+- From COMMIT1 to HEAD ignoring changes unstaged/untracked
+    - ```git diff --cached --shortstat <COMMIT>```
+    - ```git diff --shortstat <COMMIT> HEAD```
+
+
+
 ---
 
 
